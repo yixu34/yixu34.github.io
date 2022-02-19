@@ -1,0 +1,22 @@
+---
+
+layout: default
+
+---
+
+{{ content }}
+
+<nav>
+<ul>
+    {% for post in site.posts %}
+
+    <li class="tag-h1">
+
+        <a href="{{ post.url }}">{{ post.title }}</a>
+
+    </li>
+
+    {% endfor %}
+
+</ul>
+</nav>
